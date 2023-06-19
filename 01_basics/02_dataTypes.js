@@ -18,7 +18,7 @@ let isLoggedIn = false
 // string => ""
 // boolean => true/false
 // null => standalone value
-// undefined => when we declared variable but not assign any value
+// undefined =>  any variable that has not been assigned a value
 // symbol => unique
 
 
