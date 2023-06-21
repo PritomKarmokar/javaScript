@@ -53,3 +53,37 @@ const myFunction = function(){
 
 
 // further study link : https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack (Primitive),  Heap (Non-Primitive)
+
+let myYoutubename = "prtiomKarmokar"
+
+let anothername = myYoutubename
+
+anothername = "amme"
+
+console.log(myYoutubename)  // pritomKarmokar
+console.log(anothername)    // amme
+
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "abc@gmail.com"
+
+/*
+    Since both 'userOne' and 'userTwo' variables getting the same 
+    reference both of their values will be same after changing
+*/
+
+console.log(userOne.email)  // abc@gmail.com
+
+console.log(userTwo.email)  // abc@gmail.com
