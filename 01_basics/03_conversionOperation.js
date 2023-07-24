@@ -53,8 +53,8 @@ let str3 = str1 + str2
 
 // console.log( (3 + 4) * 5 % 3)
 
-// console.log(+true); // 1
-// console.log(+"") // 0
+// console.log(+true); // 1 ; but this type of operations should be avoided
+// console.log(+"") // 0 ; but this type of operations should be avoided
 
 let num1, num2, num3
 
@@ -67,4 +67,21 @@ let gameCounter = 100
 
 console.log(gameCounter)
 
+// Prefix and Postfix Operation
+
+let x = 3
+const y = x++ // Postfix
+
+// Postfix operation increments and returns the value before increments
+
+console.log(`Postfix operation, x : ${x}, y : ${y}`) // x : 4, y : 3
+
+let a = 3
+const b = ++a
+
+// Prefix operation increments and returns the value after increments
+
+console.log(`Prefix operation, a : ${a}, b : ${b}`) // a : 4, b : 4
+
 // postfix and prefix operator further study : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment
+
