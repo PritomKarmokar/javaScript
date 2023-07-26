@@ -37,3 +37,5 @@ const min = 10
 const max = 20
 
 console.log(Math.floor(Math.random() * (max - min + 1)) + min) // important line of code
+
+// further study: https://www.w3schools.com/js/js_numbers.asp
