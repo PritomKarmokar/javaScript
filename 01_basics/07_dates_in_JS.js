@@ -37,3 +37,5 @@ console.log(newDate.getDay()) // Getting only 'days' value. Days starts from 'Mo
 newDate.toLocaleString('default',{
     weekday: "long"
 })
+
+// further study: https://www.w3schools.com/js/js_dates.asp 
