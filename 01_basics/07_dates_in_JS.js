@@ -1,54 +1,39 @@
-// Dates
+// Dates object in JavaScript
 
-let myDate = new Date()
+let myDate = new Date() // It will provide current time and date
+console.log(myDate) // But this is not readable
 
-// console.log(myDate) // couldn't understand properly
+console.log(myDate.toString()) // Adding 'toString()' method makes it readable
 
-// console.log(myDate.toString())
+console.log(myDate.toDateString())
 
-// Output will be changed based on the current date and time
+console.log(myDate.toLocaleString())
 
-// console.log(`toISOString() : ${myDate.toISOString()}`) // 2023-07-27T07:38:38.466Z
+console.log(typeof myDate) // Date() is defined as 'object'
 
-// console.log(`toDateString() : ${myDate.toDateString()}`) // Thu Jul 27 2023
 
-// console.log(`toLocaleDateString() : ${myDate.toLocaleDateString()}`) // 7/27/2023
-
-// console.log(`toLocaleString() : ${myDate.toLocaleString()}`) // 7/27/2023, 7:41:31 AM
-
-// console.log(typeof myDate) // object
-
-// let myCreatedDate = new Date(2023, 0, 23) // Month starts from 0
-
-// console.log(myCreatedDate.toDateString())
-
-// let myCreatedDate = new Date(2023, 0, 23, 5, 3)
-
-// console.log(myCreatedDate.toLocaleString())
-
-// let myCreatedDate = new Date("2023-01-14") // yy-mm-dd format
-
-let myCreatedDate = new Date('01-14-2023') // mm-dd-yy format
-
+// Creating a specific time and date
+// let myCreatedDate = new Date(2023, 0, 23) // 'months' starts from 0 in javaScript
+// let myCreatedDate = new Date(2023, 0, 23, 5, 3) // Specifying 'hours' and 'minutes'
+// let myCreatedDate = new Date("2023-01-14") // Specifying 'yy-mm-dd' format
+let myCreatedDate = new Date("01-14-2023") // Specifying 'dd-mm-yy' format
 console.log(myCreatedDate.toLocaleString())
 
+// Specifying current timestamp
 let myTimeStamp = Date.now()
+console.log(myTimeStamp) // milliseconds value from now to 1970 january 1
 
-console.log(myTimeStamp)
+console.log(myCreatedDate.getTime()) // convert the 'dates' into milliseconds format from 1970 january 1
 
-console.log(myCreatedDate.getTime())
-
-console.log(Math.floor(Date.now()/1000))
-
+// Converting the milliseconds into seconds
+console.log(Math.floor(Date.now() / 1000))
 
 let newDate = new Date()
-
 console.log(newDate)
+console.log(newDate.getMonth()) // Getting only 'months' value. Months starts from 0
+console.log(newDate.getDay()) // Getting only 'days' value. Days starts from 'Monday'
 
-console.log(newDate.getMonth() + 1) // months starting from 0
-
-console.log(newDate.getDay())
-
-newDate.toLocaleDateString('default', {
-    weekday: "long",
+// Customizing date format
+newDate.toLocaleString('default',{
+    weekday: "long"
 })
