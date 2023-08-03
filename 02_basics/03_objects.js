@@ -1,3 +1,5 @@
+// Two types of ways for declaring objects: 'literals' and 'singleton'
+
 // singleton
 // Object.create -- constructor method
 
@@ -8,7 +10,7 @@ const mySym = Symbol("key1")
 const JsUser = {
     name: "Pritom",
     "full name": "Pritom Karmokar",
-    [mySym]: "mykey1",
+    [mySym]: "mykey1",  // for refering 'symbol' we need to use '[]' operator 
     age: 18,
     location: "Dhaka",
     email: "pk@gmail.com",
